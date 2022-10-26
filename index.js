@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.cli = exports.CLICommand = exports.Param = exports.Flag = exports.CLI = void 0;
+var cli_1 = require("./tools/cli");
+Object.defineProperty(exports, "CLI", { enumerable: true, get: function () { return cli_1.CLI; } });
+var Flag_1 = require("./lib/Flag");
+Object.defineProperty(exports, "Flag", { enumerable: true, get: function () { return Flag_1.Flag; } });
+var Param_1 = require("./lib/Param");
+Object.defineProperty(exports, "Param", { enumerable: true, get: function () { return Param_1.Param; } });
+var CLICommand_1 = require("./lib/CLICommand");
+Object.defineProperty(exports, "CLICommand", { enumerable: true, get: function () { return CLICommand_1.CLICommand; } });
+var cli = new cli_1.CLI();
+exports.cli = cli;
